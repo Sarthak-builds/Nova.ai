@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:  "Space Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+}
+body {
+ /* background: linear-gradient(to bottom, #ffffff 70%, #000000 100%);  */
+
+ color: #000000;
+ min-height: 100vh;
+}
+.main-container {
+    padding: 20px 40px;
+}
+.nav,.suggestions,.hero-section,.prompt-container{
+    /* background-color: red; */
+    padding: 0px 20px;
+    margin: 10px auto;
+    width: 100%;
+    /* max-width: 980px; */   
+}
+.nav,.nav-right,.nav-left {
+    background-color: lightblue;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.nav-right,.nav-left {
+    width: 10rem;
+    background-color: lightblue;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.hero-section,.suggestions {
+    background-color: lightblue;
+}
+.prompt-container {
+    position: fixed;
+     bottom: 0;
+    left: 0; 
+    width: 100%;
+    height: 56px;
+    padding: 16px 0;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+.prompt-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: lightblue;
+     margin-bottom: 60px;
+}
+.prompt-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    height: 100%;
+    width: 60vw;
+    margin-bottom: 60px;
+}
+.prompt-input {
+    min-width: 40vw;
+}
+.avatar {
+    width: 80px;
+    /* animation:rotate 3s linear infinite; */
+}
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* chat container */
+.chats-container .message{
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    background-color: rgb(234, 231, 231);
+}
+.message{
+    margin: 0 auto;
+    margin-left: 40px;
+    width: 100%;
+    padding: 5px 20px;
+}
+.chats-container .message .mssg-text{
+    word-wrap: break-word;
+    white-space: pre-line;
+    padding: 3px 16px;
+}
+.chats-container .user-mssg .mssg-text{
+max-width: 75%;
+border-radius: 13px 13px 3px 13px;
+background-color: grey;
+}
+.chats-container .user-mssg{
+    flex-direction: column;
+    align-items: flex-start;
+}
