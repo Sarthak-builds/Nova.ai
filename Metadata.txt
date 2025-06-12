@@ -1,6 +1,0 @@
-color combinations
-Color	        Hex Code	           Suggested Usage	                                    Role
-White Gray	#F2F2F2	Chat background / App background	             Background
-Warm Beige	#EAE4D5	Bot message background / Accent areas	Bot Message BG
-Muted Olive	#B6B09F	Borders, icons, placeholder text	             Borders/Text
-Black       	#000000           Primary text color	                                      Main Text
