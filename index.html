@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA.AI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <!-- Background glass -->
+     <div id="bg">
+
+     </div>
+<!--All the sections are wrapped inside a container-->
+<div class="main-container">
+<!--header section containing the navbar-->
+    <header class="nav">
+        <div class="nav-left">
+            <div class="nav-logo"><i class="fa-brands fa-nfc-symbol icon" style="color: #ffffff; font-size: 56px; margin-right: 20px;"></i></div>
+        </div>
+        <div class="nav-right">
+       <i class="ri-download-cloud-line"></i>
+        <button class="btn">Login</button>
+        </div>
+    </header>
+    
+    <section id="sec1">
+        <h1>NOVA,Your AI Powered Assistant.</h1>
+        <p> Enhance your experience like a pro.</p>
+    </section>
+    <div id="smallbox"></div>
+    <div id="suggestions">
+        <ul class="suggestion-box"><h2>Feature</h2><p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ducimus fugiat! Aliquid voluptas, tempora, distinctio explicabo, architecto neque voluptates nulla optio ut blanditiis voluptatum omnis asperiores numquam! Consequatur, nihil et?</p><i class="ri-brain-2-fill"></i></ul>
+          <ul class="suggestion-box"><h2>Feature</h2><p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ducimus fugiat! Aliquid voluptas, tempora, distinctio explicabo, architecto neque voluptates nulla optio ut blanditiis voluptatum omnis asperiores numquam! Consequatur, nihil et?</p><i class="ri-brain-2-fill"></i></ul>
+            <ul class="suggestion-box"><h2>Feature</h2><p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ducimus fugiat! Aliquid voluptas, tempora, distinctio explicabo, architecto neque voluptates nulla optio ut blanditiis voluptatum omnis asperiores numquam! Consequatur, nihil et?</p><i class="ri-brain-2-fill"></i></ul>
+              <ul class="suggestion-box"><h2>Feature</h2><p>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, ducimus fugiat! Aliquid voluptas, tempora, distinctio explicabo, architecto neque voluptates nulla optio ut blanditiis voluptatum omnis asperiores numquam! Consequatur, nihil et?</p><i class="ri-brain-2-fill"></i></ul>
+       
+    </div>
+    <button class="btn2">Try Now <i class="ri-arrow-right-line"></i></button>
+    <div class="chats-container">
+        <!-- <div class="message user-mssg">
+            <p class="mssg-text">Lorem</p>
+        </div> -->
+           <div class="message chat-mssg">
+            <img src="Assets/nova_logo.png" alt="gemini_logo" class="avatar">
+            <p class="mssg-text"></p>
+        </div>
+    </div>
+    <div class="prompt-container">
+        <div class="prompt-wrapper">
+            <form action="##" class="prompt-form">
+                <input type="text" class="prompt-input" placeholder="Ask Nova" required>
+                <div class="prompt-actions">
+                    <button class="btn" id="prompt-input-file" type="button">file</button>
+                    <button class="btn" id="prompt-send" type="submit">send</button>
+                     <button class="btn" id="dlt-chat" type="button">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="animation.js"></script>
+</body>
+</html>
