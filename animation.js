@@ -52,4 +52,38 @@ boxes.forEach((box) => {
     });
   });
 });
+let tl2= gsap.timeline();
+let chatNow= document.querySelector(".btn2");
+chatNow.addEventListener("click",()=>{
+  // tl2.to("body", {
+  //   background:"black",
+  //   duration:1,
+  //   ease:"power3.out"
+  // })
+  tl2.to("#suggestions, .btn2", {
+    opacity:0
+  })
+  tl2.to("#sec1, #smallbox",{
+  scale:0.5,
+  y:-190,
+  duration:1,
+  ease:"power3.out"
+},"-=0.5")
+tl2.to(".chats-container", {
+  y:-850,
+  duration:1,
+  opacity:1,
+  ease:"power1.out"
+},"sync3")
+
+tl2.to(".prompt-form", {
+  display:"flex",
+  duration:2,
+  ease:"power3.out",
+  // onStart:()=>{
+  //   document.querySelector(".nav").style.position="fixed";
+  // }
+},"sync3")
+}
+)
 
