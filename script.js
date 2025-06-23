@@ -89,13 +89,11 @@ const handleFormSubmit=(e)=> {
 }
 promptForm.addEventListener("submit", handleFormSubmit);
 dltBtn.addEventListener("click", () => {
-    // Clear all messages from the chat container
     chatscontainer.innerHTML = "";
     
     // Reset chat history array
     chatHistory = [];
-    
-    // Optional: Add back the initial greeting message
+  
     const initialGreeting = `
         <div class="message chat-mssg">
             <img src="Assets/nova_logo.png" alt="gemini_logo" class="avatar">

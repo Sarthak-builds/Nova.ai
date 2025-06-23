@@ -102,7 +102,7 @@ font-size: 3rem;
     padding: 16px 20px;
     line-height: 32px;
     position: relative;
-    transition: transform 1s ease;
+    /* transition: transform 0.6s ease; */
 }
 .suggestion-box:hover {
     transform: scale(1.2);
@@ -375,17 +375,18 @@ border-radius: 24px ;
 }
 .footer h2 {
     font-size: 18px;
-    padding-bottom: 12px;
+    padding-bottom: 8px;
 }
 .body2 {
     overflow: hidden;
 }
 .footer i {
-    font-size: 34px;
+    font-size: 30px;
     margin: 4px;
     color: rgb(211, 211, 211);
     text-decoration: none;
     outline: none;
+    /* align-self: flex-start; */
 }
 .footer a {
     text-decoration: none;
