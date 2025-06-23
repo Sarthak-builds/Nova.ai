@@ -51,7 +51,7 @@ backdrop-filter: blur(10px);
 font-size: 3rem;
 }
 .btn {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 400;
     padding: 8px 14px;
     background-color:transparent;
@@ -96,7 +96,7 @@ font-size: 3rem;
     /* background-color: red; */
 }
 .suggestion-box {
-    width: 45%;
+    width: 40%;
     font-size: 2.5rem;
     border-radius: 12px;
     padding: 16px 20px;
@@ -115,18 +115,18 @@ font-size: 3rem;
     /* align-self: flex-end; */
 }
 .suggestion-box h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     margin-bottom: 8px;
     font-family:'Roboto Condensed';
     font-weight: 600;
 }
 .suggestion-box p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family:'Montserrat';
     font-weight: 200;
 }
 .suggestion-box i {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     position: absolute;
     right: 12px;
     bottom:9px;
@@ -299,9 +299,9 @@ border-radius: 24px ;
 .btn2 {
     outline: none;
     text-decoration: none;
-    height: 3.5rem;
-    padding: 0.8rem 1rem;
-    font-size: 1.2rem;
+    height: 3rem;
+    padding: 0.6rem 0.8rem;
+    font-size: 1rem;
     font-family:'Montserrat';
     font-weight: 600;
     background-color: transparent;
@@ -343,7 +343,7 @@ border-radius: 24px ;
     font-family:'Roboto Condensed';
 }
 #sec1 h1 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
     font-weight: 800;
     background: linear-gradient(45deg,rgba(124, 56, 235, 1), #ffffff,rgba(124, 56, 235, 1));
   -webkit-background-clip: text;
@@ -353,7 +353,7 @@ border-radius: 24px ;
   font-family: "michroma";
 }
 #sec1 p {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
     font-weight: 400;
     color: rgb(186, 186, 186);
     text-shadow: 2px 2px 8px rgba(107, 28, 236, 0.8);
@@ -374,14 +374,14 @@ border-radius: 24px ;
     color: rgb(211, 211, 211);
 }
 .footer h2 {
-    font-size: 24px;
+    font-size: 18px;
     padding-bottom: 12px;
 }
 .body2 {
     overflow: hidden;
 }
 .footer i {
-    font-size: 40px;
+    font-size: 34px;
     margin: 4px;
     color: rgb(211, 211, 211);
     text-decoration: none;
