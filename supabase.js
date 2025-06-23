@@ -56,10 +56,8 @@ authForm.addEventListener("submit", async (e)=>{
             
             // Redirect after a short delay
             setTimeout(() => {
-                window.location.href = 'index.html';
+                window.location.href = 'https://nova-xi-tan.vercel.app/index.html';
             }, 1000);
-    // window.location.href='http://127.0.0.1:5500/index.html';
-    // window.location.href= 'http://127.0.0.1:5500/index.html';
         } else {
             result = await supabase.auth.signInWithPassword({ email, password });
         }
@@ -67,9 +65,9 @@ authForm.addEventListener("submit", async (e)=>{
             alert(result.error.message);
         } else {
             alert(isSignedUp ? 'Sign up successful! Check your email.' : 'Logged in successfully!');
-            window.location.href = 'index.html';
+            window.location.href = 'https://nova-xi-tan.vercel.app/index.html';
         }
-       window.location.href= 'nova-xi-tan.vercel.app/index.html'; 
+       window.location.href= 'https://nova-xi-tan.vercel.app/index.html'; 
     }
     // window.location.href='index.html';//redirect to main wala app
     catch (error){
@@ -84,7 +82,7 @@ googleBtn.addEventListener('click', async () => {
         const { error } = await supabase.auth.signInWithOAuth({
             provider: 'google',
           options: {
-                redirectTo: window.location.origin + '/index.html'
+                redirectTo: 'https://nova-xi-tan.vercel.app/index.html';
             }
 
         });
@@ -101,7 +99,7 @@ supabase.auth.onAuthStateChange((event, session) => {
     } else if (event === 'SIGNED_OUT') {
         console.log('User signed out');
         alert('Your session has expired. Please log in again.');
-        window.location.href = 'auth.html';
+        window.location.href = 'https://nova-xi-tan.vercel.app/index.html';
     }
 });
 
