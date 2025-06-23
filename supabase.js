@@ -82,7 +82,7 @@ googleBtn.addEventListener('click', async () => {
         const { error } = await supabase.auth.signInWithOAuth({
             provider: 'google',
           options: {
-                redirectTo: 'https://nova-xi-tan.vercel.app/index.html';
+                redirectTo: window.location.origin + '/index.html'
             }
 
         });
@@ -99,7 +99,7 @@ supabase.auth.onAuthStateChange((event, session) => {
     } else if (event === 'SIGNED_OUT') {
         console.log('User signed out');
         alert('Your session has expired. Please log in again.');
-        window.location.href = 'https://nova-xi-tan.vercel.app/index.html';
+        window.location.href = 'auth.html';
     }
 });
 
