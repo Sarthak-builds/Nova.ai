@@ -4,7 +4,7 @@ const promptForm=document.querySelector(".prompt-form");
 const chatscontainer= document.querySelector(".chats-container");
 const promptInput= document.querySelector(".prompt-input");
 const dltBtn= document.querySelector("#dlt-chat")
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
+const API_KEY=`AIzaSyD4sD_ipgMIfj1VQ-R_hbKv5rFl20DgeTM`;
 const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;//hidden until i learn how to hide it, lol
 // const logo= document.querySelector(".nav-logo");
 

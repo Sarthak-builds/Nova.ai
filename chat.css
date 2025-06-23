@@ -420,12 +420,19 @@
     .body2 .user-mssg:last-child {
         margin-bottom: 15px;
     }
+    .body2 .bot2 {
+        display:none;
+    }
+    
 }
 
 /* VERY SMALL SCREENS (less than 360px width) */
 @media (max-width: 360px) {
     .body2 .nav {
         padding: 0.5rem 0.6rem;
+    }
+    .body2 .bot2 {
+        display:none;
     }
     
     .body2 #sec1 h1 {

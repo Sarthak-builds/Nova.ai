@@ -1,8 +1,8 @@
  import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
 
 // import { createClient } from '@supabase/supabase-js';
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
+const supabaseUrl = `https://epfwgofcymrjuxyyuduz.supabase.co`;
+const supabaseKey = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVwZndnb2ZjeW1yanV4eXl1ZHV6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1MDQ5NDY3NiwiZXhwIjoyMDY2MDcwNjc2fQ.dcpV9ZZNtVQIIRUqPgkrUH0e3DBHanF2kJEn4j_8lVc`;
 const supabase = createClient(supabaseUrl, supabaseKey);
 const authBtn= document.querySelector("#auth-btn");
 const toggleBtn= document.querySelector("#toggle-signup");
