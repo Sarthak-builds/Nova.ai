@@ -4,8 +4,7 @@ const promptForm=document.querySelector(".prompt-form");
 const chatscontainer= document.querySelector(".chats-container");
 const promptInput= document.querySelector(".prompt-input");
 const dltBtn= document.querySelector("#dlt-chat")
-const API_KEY = import.meta.env.API_KEY;
-const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+const API_URL =`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 // const logo= document.querySelector(".nav-logo");
 
 //handle the form submission and display the prompt of the user.

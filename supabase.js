@@ -1,6 +1,6 @@
-import { createClient } from '@supabase/supabase-js';
-const supabaseUrl = import.meta.env.supabaseUrl;
-const supabaseKey = import.meta.env.supabaseKey;
+ import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm";
+
+
 const supabase = createClient(supabaseUrl, supabaseKey);
 const authBtn= document.querySelector("#auth-btn");
 const toggleBtn= document.querySelector("#toggle-signup");
