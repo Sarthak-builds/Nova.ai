@@ -69,7 +69,7 @@ authForm.addEventListener("submit", async (e)=>{
             alert(isSignedUp ? 'Sign up successful! Check your email.' : 'Logged in successfully!');
             window.location.href = 'index.html';
         }
-       window.location.href= 'http://127.0.0.1:5500/index.html'; 
+       window.location.href= 'nova-xi-tan.vercel.app'; 
     }
     // window.location.href='index.html';//redirect to main wala app
     catch (error){
