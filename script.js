@@ -1,13 +1,13 @@
 
 //All the elements selection
-const promptForm= document.querySelector(".prompt-form");
+const promptForm=document.querySelector(".prompt-form");
 const chatscontainer= document.querySelector(".chats-container");
 const promptInput= document.querySelector(".prompt-input");
-const API_KEY=``;//hidden until i learn how to hide it, lol
+const dltBtn= document.querySelector("#dlt-chat")
 const API_URL =`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+// const logo= document.querySelector(".nav-logo");
 
 //handle the form submission and display the prompt of the user.
-
 
 //user message div create
 const createMssgDiv=(content, className)=>{
@@ -87,3 +87,19 @@ const handleFormSubmit=(e)=> {
     },500);
 }
 promptForm.addEventListener("submit", handleFormSubmit);
+dltBtn.addEventListener("click", () => {
+    // Clear all messages from the chat container
+    chatscontainer.innerHTML = "";
+    
+    // Reset chat history array
+    chatHistory = [];
+    
+    // Optional: Add back the initial greeting message
+    const initialGreeting = `
+        <div class="message chat-mssg">
+            <img src="Assets/nova_logo.png" alt="gemini_logo" class="avatar">
+            <p class="mssg-text">Hola! How can i help you?</p>
+        </div>
+    `;
+    chatscontainer.innerHTML = initialGreeting;
+});

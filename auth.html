@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Nova Auth</title>
+    <link rel="icon" type="image/x-icon" href="Assets/nova_logo.png">
+    <link rel="stylesheet" href="auth.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <a href="index.html">
+        <button class="home-btn"><i class="ri-home-9-line"></i></button>
+    </a>
+      <div id="container">
+        <div class="authContent">
+           <div class="outer">
+             <h1> <img src="Assets/nova_logo.png" alt="Nova AI"> Welcome to Nova.AI</h1>
+             <p>Sign in or create an account to chat with your AI assistant.</p>
+            </div>
+            <form id="auth-form">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter your mail address" required id="email"><br>
+                <label for="password">Password</label>
+                <input type="password" required placeholder=":" id="password"><br>
+                 <button type="submit" class="btn auth-btn" id="auth-btn">Sign In</button>
+            </form>
+            <div class="auth-toggle">
+                        <p>Don't have an account? <a href="#" id="toggle-signup">Sign Up</a></p>
+                    <div class="auth-options">
+                        <button class="btn oauth-btn" id="google-login">Sign in with Google <img src="https://img.icons8.com/?size=96&id=V5cGWnc9R4xj&format=png" alt="sign up with google"></button>
+                    </div>
+           </div>
+        </div>
+     <div class="imgContent">
+            <dotlottie-player
+        src="https://lottie.host/1018a026-ec51-440b-aa32-87b2638b1da9/4v7d3PG3Wu.lottie"
+        background="transparent"
+        speed="1"
+        style="width: 100%; height: 100%"
+        loop
+        autoplay>
+       </dotlottie-player>
+       </div>
+ </div>
+    
+    <script type="module" src="supabase.js"></script>
+    <script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA AI Chatbot</title>
+    <link rel="icon" type="image/x-icon" href="Assets/nova_logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="chat.css">
+</head>
+<body class="body2">
+<!--All the sections are wrapped inside a container-->
+<div class="main-container">
+<!--header section containing the navbar-->
+    <header class="nav">
+        <div class="nav-left">
+            <a class="nav-logo" href="index.html" onclick="location.reload();"><i class="fa-brands fa-nfc-symbol iconlogo"></i></a>
+        </div>
+        <div class="nav-right">
+       <!-- <i class="ri-download-cloud-line"></i> -->
+        <a href="auth.html"><button class="btn">Login</button></a>
+        </div>
+    </header>
+    <div class="hero">
+       <div id="smallbox"></div>  
+ <section id="sec1">
+        <h1>NOVA AI
+            Your AI Powered Assistant.</h1>
+        <p> Enhance your experience like a pro.</p>
+    </section>
+     
+  <div class="chats-container">
+        <!-- <div class="message user-mssg">
+            <p class="mssg-text">Lorem</p>
+        </div> -->
+           <div class="message chat-mssg">
+            <img src="Assets/nova_logo.png" alt="gemini_logo" class="avatar">
+            <p class="mssg-text"> Hola! How can i help you?</p>
+        </div>
+    </div>
+     <form action="##" class="prompt-form">
+                <input type="text" class="prompt-input" placeholder="Ask Nova" required>
+                <div class="prompt-actions">
+                    <button class="btn3" id="prompt-send" type="submit"><i class="ri-send-plane-line send"></i></button>
+                     <button class="btn3" id="dlt-chat" type="button"><i class="ri-delete-bin-6-line dlt"></i></i></button>
+                </div>
+            </form>     
+    </div>     
+</div>
+<div class="bot2"><dotlottie-player
+  src="https://lottie.host/e40768d8-075b-49e6-952c-389f13bd76a0/8UfvfEvSC0.lottie"
+  background="transparent"
+  speed="1"
+  style="width: 200px; height: 200px"
+  loop
+  autoplay></dotlottie-player></div> 
+<script src="script.js" type="module"></script> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script
+  src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+  type="module"
+></script>
+<script src="chat_anim.js"></script>
+</body>
+</html>
