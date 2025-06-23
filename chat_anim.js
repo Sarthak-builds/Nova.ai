@@ -13,6 +13,10 @@ tl2.to("#sec1 h1", {
   scale:0.8,
   duration:0.5
 }, "sync10")
+tl2.to(".chats-container", {
+  y:-80
+  
+}, "sync10")
 tl2.to("#sec1 p", {
   y:-100,
   scale:0.8,
