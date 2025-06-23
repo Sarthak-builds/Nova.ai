@@ -179,15 +179,10 @@
     }
     
     .body2 .prompt-form {
-        width: 90vw;
-        height: 50px;
-        bottom: 15px;
+       width: 75vw;
         left: 50%;
         transform: translateX(-50%);
-        padding: 6px 8px;
-        position: fixed;
-        z-index: 100;
-        backdrop-filter: blur(10px);
+        bottom: 20%;
     }
     
     .body2 .prompt-input {
@@ -198,7 +193,8 @@
     
     .body2 .prompt-actions {
         display: flex;
-        gap: 5px;
+        justify-content: center;
+        align-items: center;
     }
     
     .body2 .btn3 {

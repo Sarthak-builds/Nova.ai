@@ -5,7 +5,7 @@ form.addEventListener("submit",()=>{
      if (animationPlayed) {
         return;}
   animationPlayed = true;
-    tl2.to("body",{
+    tl2.to("body2",{
         overflow:"hidden"
     })
 tl2.to("#sec1 h1", {

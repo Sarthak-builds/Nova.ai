@@ -600,7 +600,7 @@ border-radius: 24px ;
     .prompt-form {
         width: 90vw;
         height: 50px;
-        bottom: 20px;
+        bottom: 60px;
         left: 50%;
         transform: translateX(-50%);
         padding: 6px;
@@ -702,7 +702,7 @@ border-radius: 24px ;
     .prompt-form {
         width: 95vw;
         height: 45px;
-        bottom: 10px;
+        bottom: 40px;
     }
     
     .prompt-input {
@@ -732,6 +732,9 @@ border-radius: 24px ;
     .footer i {
         font-size: 30px;
     }
+    #smallbox {
+        display: none;
+    }
 }
 
 /* LANDSCAPE MOBILE RESPONSIVE STYLES */
@@ -754,6 +757,9 @@ border-radius: 24px ;
     }
     
     .bot2 {
+        display: none;
+    }
+    #smallbox {
         display: none;
     }
 }
