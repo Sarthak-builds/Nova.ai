@@ -19,21 +19,38 @@ return mssgDiv;
 }//div create kra uske andar html daldiya jiske andar hamara user prompt text tha
 
 //typing effect and scrolling to the bottom effect
-const scrollToBottom= ()=> chatscontainer.scrollTo({top:chatscontainer.scrollHeight, behavior:"smooth"});
-const typingEffect=(text, textElement, chatMssgDiv)=>{
-    textElement.textContent="";
-    const words= text.split("");
-    let wordIndex=0;
-    const typingInterval= setInterval(()=>{
-        if (wordIndex< words.length){
-         textElement.textContent+= (wordIndex===0?" ":"")+words[wordIndex++];
-         scrollToBottom();
-        }else {
-            clearInterval(typingInterval)
+// const scrollToBottom= ()=> chatscontainer.scrollTo({top:chatscontainer.scrollHeight, behavior:"smooth"});
+// const typingEffect=(text, textElement, chatMssgDiv)=>{
+//     textElement.textContent="";
+//     const words= text.split("");
+//     let wordIndex=0;
+//     const typingInterval= setInterval(()=>{
+//         if (wordIndex< words.length){
+//          textElement.textContent+= (wordIndex===0?" ":"")+words[wordIndex++];
+//          scrollToBottom();
+//         }else {
+//             clearInterval(typingInterval)
+//         }
+//     },8);
+const scrollToBottom = () => {
+    if (chatscontainer.scrollTop + chatscontainer.clientHeight >= chatscontainer.scrollHeight - 10) {
+        chatscontainer.scrollTo({ top: chatscontainer.scrollHeight, behavior: "smooth" });
+    }
+};
+const typingEffect = (text, textElement, chatMssgDiv) => {
+    textElement.textContent = "";
+    const words = text.split("");
+    let wordIndex = 0;
+    const typingInterval = setInterval(() => {
+        if (wordIndex < words.length) {
+            textElement.textContent += (wordIndex === 0 ? "" : "") + words[wordIndex++];
+        } else {
+            clearInterval(typingInterval);
+            scrollToBottom(); // Scroll to bottom only after typing completes
         }
-    },8);
-
-}//typing effect learned and scrolling to the bottom effects!!!
+    }, 8);
+};
+//typing effect learned and scrolling to the bottom effects!!!
 let chatHistory=[];
 const generateResponse= async (chatMssgDiv)=>{
     const textElement =chatMssgDiv.querySelector(".mssg-text");
