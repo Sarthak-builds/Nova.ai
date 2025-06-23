@@ -24,7 +24,7 @@ tl.from("#smallbox",{
     repeat:-1,
     ease:"power2.out"
 },"sync2")
-tl1.from("#suggestions .suggestion-box", {
+tl.from("#suggestions .suggestion-box", {
     y:100,
     duration:1,
     stagger:0.1,
@@ -35,10 +35,10 @@ tl.from (".btn2", {
     opacity:0,
     duration:0.3
 },"sync2")
-  tl1.from(".mssg-text",{
-    opacity:0,
-    duration:1
-  }, "sync2")
+  // tl.from(".mssg-text",{
+  //   opacity:0,
+  //   duration:1
+  // }, "sync2")
 let boxes = document.querySelectorAll(".suggestion-box");
 
 boxes.forEach((box) => {
